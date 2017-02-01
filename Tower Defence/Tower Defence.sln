@@ -1,0 +1,25 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{875A615A-7E48-DD0C-2D78-EC325E8D8F0D}") = "Tower Defence", "Assembly-CSharp.csproj", "{D5374558-ECB5-BED4-A112-BFCB5B355C8B}"
+EndProject
+Project("{875A615A-7E48-DD0C-2D78-EC325E8D8F0D}") = "Tower Defence", "Assembly-CSharp-Editor-firstpass.csproj", "{8EB959F2-B911-397E-0398-E1504F54DB62}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D5374558-ECB5-BED4-A112-BFCB5B355C8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5374558-ECB5-BED4-A112-BFCB5B355C8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5374558-ECB5-BED4-A112-BFCB5B355C8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5374558-ECB5-BED4-A112-BFCB5B355C8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EB959F2-B911-397E-0398-E1504F54DB62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EB959F2-B911-397E-0398-E1504F54DB62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EB959F2-B911-397E-0398-E1504F54DB62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EB959F2-B911-397E-0398-E1504F54DB62}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
