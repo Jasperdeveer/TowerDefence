@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class CameraMover : MonoBehaviour
 {
@@ -16,6 +14,12 @@ public class CameraMover : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (GameManager.GameIsOver)
+        {
+            this.enabled = false;
+            return;
+        }
+
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             doMovement = !doMovement;

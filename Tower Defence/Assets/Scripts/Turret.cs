@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Turret : MonoBehaviour
 {
@@ -14,10 +12,12 @@ public class Turret : MonoBehaviour
     public float fireRate = 1f;
     private float fireCountdown = 0f;
     public GameObject bulletPrefab;
+    
     [HeaderAttribute("Use Laser")]
     public bool useLaser = false;
 
     public int damageOverTime = 30;
+    public float slowAmount = .5f;
 
     public LineRenderer LineRenderer;
     public ParticleSystem impactEffect;
@@ -117,6 +117,7 @@ public class Turret : MonoBehaviour
     {
 
 		targetEnemy.TakeDamage(damageOverTime * Time.deltaTime);
+        targetEnemy.Slow(slowAmount);
 
         if (!LineRenderer.enabled)
         {

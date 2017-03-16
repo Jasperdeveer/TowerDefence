@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
 
 public class Shop : MonoBehaviour
 {
@@ -9,7 +8,6 @@ public class Shop : MonoBehaviour
     public TurretBlueprint anotherTurret;
     public TurretBlueprint missileLauncher;
     public TurretBlueprint laserBeamer;
-
 
     void Start()
     {
