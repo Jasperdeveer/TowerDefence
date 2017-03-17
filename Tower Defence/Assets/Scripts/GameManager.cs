@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour {
 		{
 			EndGame();
 		}
-		
+		//test
 	}
 
 	private void EndGame(){
