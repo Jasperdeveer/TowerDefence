@@ -19,7 +19,7 @@ public Text sellAmount;
 
 		if (!target.isUpgraded)
 		{
-			upgradeCost.text = "€" + target.turretBlueprint.upgradeCost;
+			upgradeCost.text = "€" + target.turretBlueprint.UpgradeCost;
 			upgradeButton.interactable = true;
 		}
 		else{

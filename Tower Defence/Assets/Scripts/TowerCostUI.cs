@@ -4,11 +4,11 @@ using UnityEngine;
 public class TowerCostUI : MonoBehaviour {
 
 	public Text towerCost;
+	Shop shopCost;
 
-	// Use this for initialization
-	void Start () {
 
-		// towerCost = TurretBlueprint;
-		
+	void Awake()
+	{
+		towerCost.text = shopCost.standardCost.ToString();
 	}
 }

@@ -24,7 +24,7 @@ public class BuildManager : MonoBehaviour
     public NodeUI nodeUI;
 
     public bool CanBuild { get { return turretToBuild != null; } } //prohibity, only allows to GET something.
-    public bool HasMoney { get { return PlayerStats.Money >= turretToBuild.cost; } } // check if player has enough money.
+    public bool HasMoney { get { return PlayerStats.Money >= turretToBuild.Cost; } } // check if player has enough money.
 
 
     public void selectNode (Node node){

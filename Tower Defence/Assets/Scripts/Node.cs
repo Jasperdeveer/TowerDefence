@@ -59,13 +59,13 @@ public class Node : MonoBehaviour
 
     void BuildTurret(TurretBlueprint blueprint)
     {
-        if (PlayerStats.Money < blueprint.cost)
+        if (PlayerStats.Money < blueprint.Cost)
         {
             Debug.Log("Not enough to build that!");
             return;
         }
 
-        PlayerStats.Money -= blueprint.cost;
+        PlayerStats.Money -= blueprint.Cost;
 
         GameObject _turret = (GameObject)Instantiate(blueprint.prefab, GetBuildPosition(), Quaternion.identity);
         turret = _turret;
@@ -80,13 +80,13 @@ public class Node : MonoBehaviour
 
     public void upgradeTurret()
     {
-        if (PlayerStats.Money < turretBlueprint.upgradeCost)
+        if (PlayerStats.Money < turretBlueprint.UpgradeCost)
         {
             Debug.Log("Not enough to upgrade that!");
             return;
         }
 
-        PlayerStats.Money -= turretBlueprint.upgradeCost;
+        PlayerStats.Money -= turretBlueprint.UpgradeCost;
         
         // delete the old turret
         Destroy(turret);
